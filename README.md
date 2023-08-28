@@ -60,6 +60,8 @@
 
 <details>
 
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/3a968e23-20c1-48f5-9204-81ca62d7c9ee)
+
 </details>
 
 ---
