@@ -44,6 +44,8 @@
 
 <details>
 
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/cdef7bee-d1c8-44c5-ad36-addf3f9ce369)
+
 </details>
 
 ---
