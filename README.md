@@ -44,7 +44,7 @@
 
 <details>
 
-![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/cdef7bee-d1c8-44c5-ad36-addf3f9ce369)
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/dc1eb046-9054-4273-9da7-823e9aefc9ad)
 
 </details>
 
