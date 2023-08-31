@@ -86,7 +86,6 @@
 cluster.name: chistov-netology
 network.host: localhost
 http.port: 9200
-discovery.seed_hosts: ["127.0.0.1", "[::1]"]
 ```
 
 </details>
