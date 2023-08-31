@@ -139,6 +139,8 @@ output {
 
 <details>
 
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/8df47ace-f607-4b71-be81-92c6155fd176)
+
 </details>
 
 <details>
