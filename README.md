@@ -44,7 +44,7 @@
 
 <details>
 
-![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/dc1eb046-9054-4273-9da7-823e9aefc9ad)
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/93f47110-3afb-40de-baee-32e9e8785326)
 
 </details>
 
@@ -60,7 +60,7 @@
 
 <details>
 
-![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/3a968e23-20c1-48f5-9204-81ca62d7c9ee)
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/263c3dbf-96d8-4cac-bd0c-9ae9fb30a2b6)
 
 </details>
 
@@ -76,7 +76,55 @@
 
 <details>
 
-![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/14d420f0-bf1f-41fe-8637-a8900ed07d16)
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/67f13eab-cd17-4569-9158-7a588e020f60)
+
+*Содержимое файла  /etc/elasticsearch/elasticsearch.yml*
+
+<details>
+
+```
+cluster.name: chistov-netology
+network.host: localhost
+http.port: 9200
+discovery.seed_hosts: ["127.0.0.1", "[::1]"]
+```
+
+</details>
+
+*Содержимое файлов /etc/logstash/conf.d/input.conf ...filter.conf, ...output.conf*
+
+<details>
+
+```
+input {
+  file {
+    path => "/var/log/nginx/access.log"
+    start_position => "beginning"
+    type => "nginx"
+   }
+ }
+```
+
+```
+filter {
+    grok {
+        match => { "message" => "%{IPORHOST:remote_ip} - %{DATA:user_name} \[%{HTTPDATE:access_time}\] \"%{WORD:h$    }
+    mutate {
+        remove_field => [ "host" ]
+    }
+}
+```
+
+```
+output {
+    elasticsearch {
+        hosts => "127.0.0.1"
+        index => "nginx-%{+YYYY.MM.dd}"
+    }
+}
+```
+
+</details>
 
 </details>
 
