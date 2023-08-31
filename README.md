@@ -76,7 +76,7 @@
 
 <details>
 
-![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/e2a44620-98af-42bf-a980-b903fc234c87)
+![image](https://github.com/Ivashka80/11-03_ELK/assets/121082757/14d420f0-bf1f-41fe-8637-a8900ed07d16)
 
 </details>
 
